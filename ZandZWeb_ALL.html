@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Sedgwick Ave' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Spirax' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Ribeye' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
+<style>
+
+
+.header {
+  padding: .05px;
+  background: #7d40b4;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 32px;
+  overflow: hidden;
+}
+
+.header img { 
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+  margin-left: 2.5%;
+  margin-top: 3%;
+}
+
+.footer  {
+  background: #7d40b4;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 32px;
+}
+
+.container {
+    position: relative;
+    transition: 1s ease;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.video-display-background  {
+    text-align: center;
+    padding: 125px;
+    background: url(https://drive.google.com/uc?id=1b1L5imXW2XN6AuiVX-O2DCmT1CdXr7LY);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 1000px;
+}
+
+.video  {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.box  {
+    border: 25px solid black;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.box o:hover  {
+    background-color: #7d40b4;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img-circle {
+        border-radius: 50px;
+        position: relative;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #c68316;
+  color: white;
+  font-size: 32px;
+  padding: 32px 64px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c68316;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+ /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a purple background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#7d40b4;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}  
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+
+.twitter-timeline {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.auto-resizable-iframe {
+  max-width: 420px;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+</style>
+   	
+<div class="header" id="myHeader">
+  <img class="img-circle" src="https://drive.google.com/uc?id=1IE9aAoeIGHMCyiPCMc2iKEGVkQK4CYd7" alt="logo"/>
+    <h1 style="font-family: 'Irish Grover'">Z & Z FTW</h1>
+ <div class="navbar">
+  <a href="#twitter"; style=font-family:'Ribeye'>What's New</a>
+  <a href="https://soundcloud.com/z-z-music" target=_blank style=font-family:'Ribeye'>SoundCloud</a>
+  <a href="https://www.youtube.com/channel/UCcv9Sp2aCUf20cMA1z1Lvmw" target=_blank style=font-family:'Ribeye'>YouTube</a>
+  <div class="dropdown">
+    <button class="dropbtn"; style=font-family:'Ribeye'>About Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#about"; style=font-family:'Ribeye'>Z & Z</a>
+      <a href="#boysbio"; onclick="pic1()"; style=font-family:'Ribeye'>Zomgshiny</a>
+      <a href="#boysbio"; onclick="pic2()"; style=font-family:'Ribeye'>Zack Grey</a>
+      <a href="#contact"; style=font-family:'Ribeye'>Contact Us</a>
+      <a href="https://ko-fi.com/zandzftw" target=_blank style=font-family:'Ribeye'>Support Us</a>
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    </div>
+    </div>
+  </div>
+</div> 
+
+<br>
+
+    <!-- Slideshow container -->
+<body style="background-color: #9ca2aa;"> 
+
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="container fade">
+    <img src="https://drive.google.com/uc?id=1O2g_2mRYRRFMqqQUjvV08rzsuLKfEN0M" alt="Welcome" class="center" style="width:100%">
+  	<div class="middle">
+    	<a href=#mainpage><div class="text"; style="font-family: 'Spirax'">Come on in!</div></a>
+    </div>
+  </div>
+
+  <div class="container fade">
+    <img src="https://drive.google.com/uc?id=1wvzeUir8mMXVmY6gV_qtaV6oPulvmxVw" alt="Music" class="center" style="width:100%">
+    <div class="middle">
+    	<a href="#music"><div class="text"; style="font-family: 'Spirax'">Listen to the Music</div></a>
+  	</div>
+  </div>
+
+  <div class="container fade">
+    <img src="https://drive.google.com/uc?id=1d4PG329_tlJyPDdFXw5VCar-Okt_PSUm" alt="Videos" class="center" style="width:100%">
+    <div class="middle">
+    	<a href="#videos"><div class="text"; style="font-family: 'Spirax'">Check out their Videos!</div></a>
+    </div>
+  </div>
+  
+  <div class="container fade">
+    <img src="https://drive.google.com/uc?id=1CGpaw6ehCZlapqdxJd3MS6IMjTu3QOyA" alt="About" class="center" style="width:100%">
+    <div class="middle">
+    	<a href="#about"><div class="text"; style="font-family: 'Spirax'">Who are these guys?</div></a>
+	</div>  
+  </div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("container");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+<body>
+
+<a name="mainpage"></a><p style="font-size:160%; font-family:'Sedgwick Ave';" align="center">Z&Z (Zack Grey & Zomgshiny) are a traveling duo of musicians, youtubers, and all around goofballs. They perform at conventions, breweries, and other venues with an urban folk style of music coupled with impromptu comedy improvs between songs. If you can't catch them at a show, check out their recorded music on their <a href="https://soundcloud.com/z-z-music" target=_blank>SoundCloud</a>.<br><br>The boys also post videos of their exploits into gaming, music, and other adventures! You can find those on their <a href="https://www.youtube.com/channel/UCcv9Sp2aCUf20cMA1z1Lvmw" target=_blank>YouTube</a> channel to enjoy the giggles and tunes as they post them there!<br><br>Just in case you are confused (most folks are):<br><br><b>Zack Grey</b> = <u>"The drinking wolf with the music problem"</u><br><br><b>ZomgShiny</b> = <u>"The explosive raccoon with a lyrics problem"</u></p>
+
+</body>
+
+<body>
+
+<br>
+<a name="videos"></a>
+<div class="video-display-background">
+  <a href="https://www.youtube.com/channel/UCcv9Sp2aCUf20cMA1z1Lvmw" target=_blank style="font-size:220%; font-family:'Sedgwick Ave'"><u>Videos on YouTube</u></a>
+  <center><iframe class="auto-resizable-iframe"; width="560px" height="312px" frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/2XlNubl9IPQ"; allowfullscreen></iframe></center>
+</div>
+
+<br><br>
+
+<a name="music"></a>
+<center><div class="box">
+  <a href="https://soundcloud.com/z-z-music" target=_blank style="font-family:'Irish Grover'; font-size:200%"><u>Their Music</u></a>
+  <p style="font-size:120%; font-family:'Sedgwick Ave'">Zack Grey & Zomgshiny have been performing music together for about as long as they have known each other. They have performed in different bands and at multiple venues across North America, honing a style of music called urban folk. They have a blast with the crowd and make sure to get everyone singing and laughing throughout the show.<br><br>Not quite having a sound come to mind when you hear the phrase"Urban Folk?"<br><br>Give this original tune by Z&Z a listen and see what you think!</p>
+  <iframe align="middle" width="400px" height=250px scrolling="no" frameborder="no" allow="autoplay" style= padding:25px; src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/264731748&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+<p style="font-size:130%; font-family:'Sedgwick Ave'">Cheers! See you guys at the next show!</p></center>
+  </div>
+  
+</body>
+
+<br>
+
+    
+<body style="background-color: #9ca2aa;"> 
+<a name="about"></a>
+<p style="font-size:200%; font-family:'Sedgwick Ave';" align="center">Just who are Z & Z?</p>
+
+<div class="image">
+    <img src="https://drive.google.com/uc?id=1jNLkG5-tM-8JCk2seCMnLvE6nGaYveqM" alt="Bio" class="center" style="width:100%">
+  	<div class="middle">
+    </div>
+  </div>
+
+<body>
+
+<a name="zandzbio2"><p style="font-size:160%; font-family:'Sedgwick Ave';" align="center">ZomgShiny and Zack Grey are both guys from Florida. They have been on the scene for about 5 years now. They both come from different backgrounds but have become fast friends who share a love of music, adventure, and generally bringing entertainment to people they meet. They found a love of playing urban folk music while actively interacting with their audience and making a show that's half music/ half comedic banter. In the last few years they have found a niche playing shows primarily at conventions & breweries.<br><br>When they aren't traveling, they like to unwind with friends via online gaming, which often turns into crazy back-and-forths between themselves as well as their friends. So, they've decided to record those moments and post the videos to <a href="https://www.youtube.com/channel/UCcv9Sp2aCUf20cMA1z1Lvmw" target=_blank>YouTube</a>. They also post show footage, updates, and other things they think up as they come, so don't be surprised if you find more than just gaming footage there. 
+</p></a>
+
+<br><br><br><br>
+
+</body>
+
+<center><div class="box">
+<body>
+
+<p style="font-size:200%; font-family:'Sedgwick Ave';" align="center">What is "Urban Folk?"</p>
+
+<div class="image">
+    <img src="https://drive.google.com/uc?id=1KGhdZqJpgSoX_GhNNwIPsCwe_5zpw0f6" alt="urbanfolk" class="center" style="width:100%">
+  	<div class="middle">
+    </div>
+
+<a name="urbanfolk"><p style="font-size:160%; font-family:'Sedgwick Ave';" align="center">The quickest answer is:<br><br>"<a href="https://soundcloud.com/z-z-music" target=_blank>Listen to This!</a>"<br><br>However, to get more specific, Urban Folk is pretty much folk storyteller music that takes place in more urban and contemporary settings instead of being the often sung and redone stories from old times. The actual sound of their music relies heavily on the boys natural harmonies along with guitar, percussion, and occassional harmonica in their live shows. The recordings are usually accompanied by more instruments, as the boys have the luxury of recording multiple tracks over themselves. However, the best way to know what their music sounds like is to just listen to it. And you can do that on their <a href="https://soundcloud.com/z-z-music" target=_blank>SoundCloud</a>! 
+  </div>
+</div>
+</body>
+
+<br><br>
+<a name="boysbio">
+<div>
+<p style="font-size:200%; font-family:'Sedgwick Ave';" align="center">Tell me more about:</p>
+</div>
+<div class="box"><p style="font-size:200%; font-family:'Sedgwick Ave';" align="center"><font color=#c68316><o onmouseover="" style="cursor: pointer"; onclick="pic1()"><u>ZomgShiny</u></o> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <o onmouseover="" style="cursor: pointer"; onclick="pic2()"><u>Zack Grey</u></o></p></font></div>
+    <img src="https://drive.google.com/uc?id=17iXFEcjutD-8scXPFIw2mW5nf6Y0CCUM"; id="img"; class="center" style="width:100%">
+    <p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"; id="bio"></p></a>
+    <script type = "text/javascript">
+        function pic1()
+        {
+            document.getElementById("img").src ="https://drive.google.com/uc?id=1eNIRO_J1LuMKhWNsPYzoNj9C0uc-ANuh";
+            document.getElementById("bio").innerHTML = "ZOMGShiny came into this world kicking and screaming and has decided to keep doing just that. Classically trained by his radio, Shiny has been singing for as long as he can remember (and with his knack for forgetting lyrics, we’ll say he started singing yesterday). Growing up, Shiny never imagined that he would one day be on stage entertaining audiences around the country. However, upon meeting the Boozewolf, he was quickly *Glass Bottle-Bottle Glassed* out onto the stage to sing while Zack played with his wood.<br><br> If you’re wondering about the raccoon and my name; well so is he, so welcome to the club. The raccoon came about in high school out of a joke. This joke has gone on for 11 years now and currently has no sign of stopping. <br><br> Travelling about and meeting such amazing people, Shiny enjoys gaming, sports, music, shinies, hanging out with friends, and drinking his cheese beer. Wanna know what that is? Then book us for a show, or come to a concert near you. Chitter!";
+        }
+        function pic2()
+        {
+            document.getElementById("img").src ="https://drive.google.com/uc?id=1zXv-Zo1nxY3X-1stNtGQe1EgMXc0n-B8";
+            document.getElementById("bio").innerHTML = "Zack Grey, also known as ''The BoozeWolf,'' is the 7 days younger of the two. He has been playing music since he was barely a teenager and has been playing videogames pretty much forever. <br><br> His wolf character started by him being dubbed a ''derpy wolf'' by his ''friends'' in high school, a moniker which he has stayed pretty true to. The ''Booze'' part came after he developed an appreciation for good beers and a fascination with bad tequila.<br><br>He met Shiny in college where, between mutual banter, music appreciation, & stupidity, they found that they were a good pair of idiots to work together (or at least tolerate one another). <br><br>Zack's often the techy one of the two, always finding new gadgets, games, and things to do or tinker with while constantly dragging Shiny by the arm to check out his projects with puppy dog eyes. When not gaming or performing...Actually, even while gaming and performing, he enjoys a good drink with even better friends, and some music or stories to help wash it all down.";
+        } </script>  
+
+<p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"><a href="https://twitter.com/zandzftw" target=_blank>ZandZ FTW's Twitter</a></p>
+<p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"><a href="https://twitter.com/Zack_Grey_" target=_blank>Zack Grey's Twitter</a></p>
+<p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"><a href="https://twitter.com/zomgshiny1" target=_blank>ZomgShiny's Twitter</a></p>
+
+<br><br>
+
+<center><div class="box">
+<body>
+<a name="art"></a>
+<p style="font-size:200%; font-family:'Sedgwick Ave';" align="center">Who Does the Art?</p>
+
+<div class="image">
+    <img src="https://drive.google.com/uc?id=1FVTUjgWzY4y9ANZyo01p_V4BvrgKhCH5" alt="art" class="center" style="width:100%">
+  	<div class="middle">
+    </div>
+<br>
+<p style="font-size:240%; font-family:'Sedgwick Ave';" align="center"><u><b>"Neither of us!"</b></u></p><p style="font-size:160%; font-family:'Sedgwick Ave';" align="center">We can't stress that enough. We love the many talented and amazing artists who we have commissioned to bring our characters to life for the various songs, videos, and general lunacy we put them in. And as the list of artists have grown, so has difficulty in keeping track with who did what art for us when. <br><br> Still, we love them to bits and want them to be successful in the craft they work so hard to hone, so if you see a piece on our website and realize that you want art commissioned from that person, let us know by <a href="mailto:zandzgamingftw@gmail.com">e-mail</a> and we will get you in contact with them ASAP!</p>
+<br><br>
+<p style="font-size:200%; font-family:'Irish Grover';" align="center">And to any artists seeing your art on here. If you need or want it taken down, let us know. We appreciate your work on all of our pieces that we commissioned.</p>
+  </div>
+</div>
+</body>
+</center>
+
+  <a name="twitter"></a>
+  <center><p style="font-family:'Irish Grover'; font-size:180%"><u>What are ZandZ up to now?</u></p></center>
+  <center><div style="width:30%; padding: 25px; margin:25px;">
+    <a class="twitter-timeline" data-theme="dark" data-link-color="#9266CC" data-tweet-limit=5 href="https://twitter.com/zandzftw?ref_src=twsrc%5Etfw"></a></center> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+  </div>
+
+
+<script>
+twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "TwitterDev"
+  },
+  document.getElementById("container")
+);
+</script>
+
+<br><br>
+
+<center><div class="box">
+<a name="contact"></a>
+<p style="font-size:200%; font-family:'Sedgwick Ave';" align="center">How do I reach these guys?</p>
+
+<div class="image">
+    <img src="https://drive.google.com/uc?id=1V3QBHCrbtC2zTH-U8pqvpYP838e70DHf" alt="art" class="center" style="width:100%">
+  	<div class="middle">
+    </div>
+<br>
+</p><p style="font-size:160%; font-family:'Sedgwick Ave';" align="center">The boys are pretty easy to get a hold of, but there are definitely different avenues to do so, so check them out here:<br><br>To reserve them for shows, projects, or collaborative work feel free to E-mail them at <a href="mailto:zandzgamingftw@gmail.com">ZandZGamingFTW@gmail.com</a><br><br>For questions or comments about their media and to stay updated check out the <a href="https://twitter.com/zandzftw"; target=_blank>ZandZ FTW Twitter</a><br><br>And to reach out to them personally you can find them on their personal Twitters.</p><center> 
+
+</div>
+</div>
+<br><br>
+
+ <div class="footer" ID=footer>
+ <footer>
+ <!-- Add font awesome icons -->
+<a href="https://twitter.com/zandzftw"; target=_blank><img src="https://drive.google.com/uc?id=13VaffZce0T-EdI_i1IYp1OQnpI7FmCU0" style="width:30px"></a>
+<a href="https://www.youtube.com/user/zandzftw/" target=_blank><img src="https://drive.google.com/uc?id=161RFTuXWB0e68Y9UJZ1_Zp9EpPfRmsDA" style="width:30px"></a>
+<a href="https://soundcloud.com/z-z-music" target=_blank><img src="https://drive.google.com/uc?id=1wGjMlPcrmvgwiQ0AprQ_PtK1SvbZXPTi" style="width:30px"></a>
+<a href="http://zandzentertainmentftw.tumblr.com/" target=_blank><img src="https://drive.google.com/uc?id=1TeIc8nspN8EQI4d_kjwh4Du4OtAPigkj" style="width:30px"></a>
+<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy us a Drink', '#b830b1', 'A0A6B2N9');kofiwidget2.draw();</script> 
+  <p style="font-size:75%; font-family:'Ribeye'">©ZandZGamingFTW</p>
+  <p style="font-size:75%; font-family:'Ribeye'">E-Mail: <a href="mailto:zandzgamingftw@gmail.com">ZandZGamingFTW@gmail.com</a></p>
+</footer> 
+
+</html>
