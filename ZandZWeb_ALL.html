@@ -1,8 +1,275 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<link rel="stylesheet" href="style.css" type="style/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Sedgwick Ave' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Spirax' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Ribeye' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
+<style>
 
+
+.header {
+  padding: .05px;
+  background: #7d40b4;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 32px;
+  overflow: hidden;
+}
+
+.header img { 
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+  margin-left: 2.5%;
+  margin-top: 3%;
+}
+
+.footer  {
+  background: #7d40b4;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 32px;
+}
+
+.container {
+    position: relative;
+    transition: 1s ease;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.video-display-background  {
+    text-align: center;
+    padding: 125px;
+    background: url(https://drive.google.com/uc?id=1b1L5imXW2XN6AuiVX-O2DCmT1CdXr7LY);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 1000px;
+}
+
+.video  {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.box  {
+    border: 25px solid black;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.box o:hover  {
+    background-color: #7d40b4;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img-circle {
+        border-radius: 50px;
+        position: relative;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #c68316;
+  color: white;
+  font-size: 32px;
+  padding: 32px 64px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c68316;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+ /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a purple background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#7d40b4;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}  
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+
+.twitter-timeline {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.auto-resizable-iframe {
+  max-width: 420px;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+</style>
    	
 <div class="header" id="myHeader">
   <img class="img-circle" src="https://drive.google.com/uc?id=1IE9aAoeIGHMCyiPCMc2iKEGVkQK4CYd7" alt="logo"/>
@@ -31,7 +298,18 @@
       <a href="https://ko-fi.com/zandzftw" target=_blank style=font-family:'Ribeye'>Support Us</a>
       </div>
       </div>
-
+<script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
     </div>
     </div>
   </div>
@@ -115,6 +393,35 @@
   <span class="dot"></span>
 </div>
 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("container");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
 
 <body>
 
@@ -189,7 +496,18 @@
 <div class="box"><p style="font-size:200%; font-family:'Sedgwick Ave';" align="center"><font color=#c68316><o onmouseover="" style="cursor: pointer"; onclick="pic1()"><u>ZomgShiny</u></o> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <o onmouseover="" style="cursor: pointer"; onclick="pic2()"><u>Zack Grey</u></o></p></font></div>
     <img src="https://drive.google.com/uc?id=17iXFEcjutD-8scXPFIw2mW5nf6Y0CCUM"; id="img"; class="center" style="width:80%">
     <p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"; id="bio"></p></a>
-    
+    <script type = "text/javascript">
+        function pic1()
+        {
+            document.getElementById("img").src ="https://drive.google.com/uc?id=1eNIRO_J1LuMKhWNsPYzoNj9C0uc-ANuh";
+            document.getElementById("bio").innerHTML = "ZOMGShiny came into this world kicking and screaming and has decided to keep doing just that. Classically trained by his radio, Shiny has been singing for as long as he can remember (and with his knack for forgetting lyrics, we’ll say he started singing yesterday). Growing up, Shiny never imagined that he would one day be on stage entertaining audiences around the country. However, upon meeting the Boozewolf, he was quickly *Glass Bottle-Bottle Glassed* out onto the stage to sing while Zack played with his wood.<br><br> If you’re wondering about the raccoon and his name; well so is he, so welcome to the club. The raccoon came about in high school out of a joke. This joke has gone on for 11 years now and currently has no sign of stopping. <br><br> Travelling about and meeting such amazing people, Shiny enjoys gaming, sports, music, shinies, hanging out with friends, and drinking his cheese beer. Wanna know what that is? Then book them for a show, or come to a concert near you. Chitter!";
+        }
+        function pic2()
+        {
+            document.getElementById("img").src ="https://drive.google.com/uc?id=1zXv-Zo1nxY3X-1stNtGQe1EgMXc0n-B8";
+            document.getElementById("bio").innerHTML = "Zack Grey, also known as ''The BoozeWolf,'' is the 7 days younger of the two. He has been playing music since he was barely a teenager and has been playing videogames pretty much forever. <br><br> His wolf character started by him being dubbed a ''derpy wolf'' by his ''friends'' in high school, a moniker which he has stayed pretty true to. The ''Booze'' part came after he developed an appreciation for good beers and a fascination with bad tequila.<br><br>He met Shiny in college where, between mutual banter, music appreciation, & stupidity, they found that they were a good pair of idiots to work together (or at least tolerate one another). <br><br>Zack's often the techy one of the two, always finding new gadgets, games, and things to do or tinker with while constantly dragging Shiny by the arm to check out his projects with puppy dog eyes. When not gaming or performing...Actually, even while gaming and performing, he enjoys a good drink with even better friends and making good stories between the two.";
+        } </script>  
+
 <p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"><a href="https://twitter.com/zandzftw" target=_blank>ZandZ FTW's Twitter</a></p>
 <p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"><a href="https://twitter.com/Zack_Grey_" target=_blank>Zack Grey's Twitter</a></p>
 <p style="font-size:160%; font-family:'Sedgwick Ave';" align="center"><a href="https://twitter.com/zomgshiny1" target=_blank>ZomgShiny's Twitter</a></p>
@@ -220,6 +538,17 @@
     <a class="twitter-timeline" data-theme="dark" data-link-color="#9266CC" data-tweet-limit=5 href="https://twitter.com/zandzftw?ref_src=twsrc%5Etfw"></a></center> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
   </div>
 
+
+<script>
+twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "TwitterDev"
+  },
+  document.getElementById("container")
+);
+</script>
+
 <br><br>
 
 <center><div class="box">
@@ -249,7 +578,5 @@
   <p style="font-size:75%; font-family:'Ribeye'">©ZandZGamingFTW</p>
   <p style="font-size:75%; font-family:'Ribeye'">E-Mail: <a href="mailto:zandzgamingftw@gmail.com">ZandZGamingFTW@gmail.com</a></p>
 </footer> 
-
-<script type="text/javascript" src="main.js"></script>
 
 </html>
